@@ -8,10 +8,6 @@ HSall_parties<- read.csv("HSall_parties.csv")
 
 regions<-read.csv("region.csv")
 
-key_votes_con<- read.csv("key_votes_list_con.csv")
-
-names(key_votes_con)[1] <- "congress"
-
 
 test<- leaderboard %>% 
   filter(first_cong > 93) %>% 
